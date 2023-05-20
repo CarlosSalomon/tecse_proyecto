@@ -21,7 +21,7 @@ background-image: url("../img/Diplomado-en-Seguridad-Electronica..jpg");/*BANNER
 background-image: url("../img/cybersecurity-6250709_960_720.jpg");/*BANNER NOSOTROS*/
 width: 100%;}
 
-.banner_productos{
+.productos__banner{
 background-image: url("../img/matrix-2326147_960_720.jpg");/*BANNER PRODUCTO*/
 background-position: center;
 background-size: cover;}
@@ -354,12 +354,12 @@ display:flex ;
 flex-wrap:nowrap;}
 
 .footer-links{
-width: 26%;
+width: 46%;
 padding: 0 15px;}
 
 
 .footer-links h4 {
-font-size: 1rem;
+font-size: 2rem;
 color: #F6F1F1;
 margin-bottom: 25px;
 font-weight: 500;
@@ -368,7 +368,7 @@ padding-bottom: 10px;
 display: inline-block;}
 
 .footer-links h5 {
-font-size: 2rem;
+font-size: 4rem;
 color: #F6F1F1;
 margin-bottom: 25px;
 font-weight: 500;
@@ -410,29 +410,36 @@ width: 80%;
 .social-link a:hover{
   background-color: #19A7CE;}
 
-@media(max-width:1024px){
+@media(min-width:1024px){
 
 
+  .footer-row{
+   gap: 100px;
+  margin-left: 35px; }
+
+.social-link{
+width: 120%;
+
+}
 .footer-links{
 width: 100%;
-margin-bottom: 20px;
 
 align-items: center;
 }
-
 .descarga_link{
-  width: 100%;}
+width: 50px;
+}
+  .img_google{
+width: 100px;
+
+  }
 
 }
 
 
 /*  contacto-html*/
 
-.contenedor_header{
-color: #F6F1F1;
-display: flex;
-font-size: 4rem;
-width: 100%;}
+
 
 .main-contacto{
 background-color: #27576d
@@ -680,12 +687,48 @@ margin-top: 25px;
 text-align: justify;
 width: auto;}
 
-/*productos */
+/*PRODUCTOS.HTML*/
 
+.productos{ display: flex;
+  flex-direction: column;}
+
+.productos__contenedor{
+  color: #F6F1F1;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 100%;}
+
+  .producto__contenedor-logo{
+    display: flex;
+   justify-content: center;
+  
+
+
+  }
+
+  .productos__logo{
+    display: flex;
+    height: 100px;
+
+    }
+.solicitar_precio{
+  background-color: rgb(63, 62, 62);
+  color: #F6F1F1;
+  width: 100px;
+  height: 30px;
+  line-height: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #19A7CE;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+  /*
 
 .galeria{
 display: flex;
-width: 600px ;
+width: 100% ;
 height: 430px;}
 
 .galeria img{
@@ -699,22 +742,23 @@ transition: .5s ease;}
     cursor: crosshair;
     width: 400px;
     opacity: 1;
-    filter: contrast(120%); }
+    filter: contrast(120%); }*/
 
 
-.seccion_sector{
+.lista_productos{
   background-color: #ffffff;
   display: flex;
+  
   flex-wrap: wrap;
   justify-content: space-evenly;
   }
 
-.sector{
+.lista_productos__tarjeta {
 display: flex;
+flex-direction: column;
 margin: 20px;
 padding: 5px;
 flex-wrap: wrap;
-flex-direction: column;
 background-color:#ffffff;
 align-items: center;
 
@@ -722,13 +766,50 @@ align-items: center;
 .h2_productos{
 background-color: #ffffff;
 color:#27576d;
-font-size: 5rem;
+font-size: 3.5rem;
 text-align: center;}
 
 .imagen_productos{
-width: 450px;
-height: 450px;}
+width: 90%;
+height: 70%;}
 
+
+@media(min-width:768px){
+
+.lista_productos{
+  display: flex;}
+
+.lista_productos__tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 20px;
+    padding: 5px;
+    background-color:#ffffff;
+    align-items: center;}
+
+.producto__contenedor-logo{
+      display: flex;
+     justify-content: center;
+}}
+@media(min-width:1024px){
+
+.productos__contenedor{
+font-size: 3rem;
+justify-content: start;}
+
+.productos__logo{
+  height: 150px;}
+
+  .lista_productos__tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 20px;
+    padding: 5px;
+    background-color:#ffffff;
+    align-items: center;}
+}
 /*NOTICIAS.HTML*/
 .section_noticias{
   align-content: center;
