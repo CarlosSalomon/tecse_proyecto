@@ -13,30 +13,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="banner_noticias">
-            <div class="contenedor_header">
-                    <h1 class="h1_noticias">NOTICIAS</h1> </div>
-                    <div><img class="logo" src="../img/logo png.png" alt="logo empresa TECSE"></div>
+    <header class="header">
+        <div class="header__banner-noticias">
+            <div class="header__contenedor">
+                    <h1>NOTICIAS</h1> </div>
+                    <div class="header__contenedor-logo"><img class="logo__img" src="../img/logo png.png" alt="logo empresa TECSE"></div>
                     <div class="form_buscar">
-                            <label for="buscar_producto" id="label">busqueda</label><!-- lo oculto por estetica profesor manifesto  que si es posible lo dejemos -->
+                            <label for="buscar_producto" class="label">busqueda</label>
                             <input type="search" placeholder="Buscar producto..." autoclomplete="on" id="buscar_producto">
                             <input type="submit" value="Buscar" class="boton_buscar">
-
                     </div>
-            </div>
-
-        <div id="barra_navegacion">
-                <nav id="menu">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                        <li><a href="../pages/productos.html">Productos</a></li>
-                        <li><a href="">Noticias</a></li>
-                    </ul>
-                </nav>
         </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="../pages/productos.html">Productos</a></li>
+                    <li><a href="">Noticias</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
     </header>
     
 <main>
@@ -53,13 +49,27 @@
         </article>
 
 
-        <article style="background-color: rgb(0, 68, 255);">Noticia 2</article>
+        <article class="noticia_secundaria" style="background-color: rgb(0, 68, 255);">
+            <h3>TITULO</h3>
+            <img src="../img/conferencia.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure illum odio accusamus temporibus provident, earum ex illo a nostrum, culpa repellendus, labore repudiandae amet? Facere ab natus ipsam dolorem!</p>
+        </article>
 
-        <article  style="background-color: rgb(58, 185, 27);">Noticia 3</article>
-
-        <article style="background-color: rgb(38, 150, 202);">Noticia 4</article>
-
-        <article style="background-color: rgb(201, 11, 11);">Noticia 5</article>
+        <article class="noticia_secundaria" style="background-color: rgb(0, 68, 255);">
+            <h3>TITULO</h3>
+            <img src="../img/conferencia.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure illum odio accusamus temporibus provident, earum ex illo a nostrum, culpa repellendus, labore repudiandae amet? Facere ab natus ipsam dolorem!</p>
+        </article>
+        <article class="noticia_secundaria" style="background-color: rgb(0, 68, 255);">
+            <h3>TITULO</h3>
+            <img src="../img/conferencia.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure illum odio accusamus temporibus provident, earum ex illo a nostrum, culpa repellendus, labore repudiandae amet? Facere ab natus ipsam dolorem!</p>
+        </article>
+        <article class="noticia_secundaria" style="background-color: rgb(0, 68, 255);">
+            <h3>TITULO</h3>
+            <img src="../img/conferencia.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure illum odio accusamus temporibus provident, earum ex illo a nostrum, culpa repellendus, labore repudiandae amet? Facere ab natus ipsam dolorem!</p>
+        </article>
 
     </div>
 </section>
@@ -73,16 +83,17 @@
                     <ul>
                         <li><a href="">Legales</a></li>
                         <li><a href="">Privacidad</a></li>
-                        <li><a href="">Tel:+549343-5489874</a></li>
+                        <li><a href="">343116487</a></li>
                         <li><a href="">Av. Artigas 1752, Parana, E.R.</a></li>
                     </ul>
                 </div>
                     <div class="footer-links">
                         <h4>Tecse</h4>
                         <ul>
+                            <li><a href="../index.html">Inicio</a></li>
                             <li><a href="./pages/nosotros.html">Nosotros</a></li>
                             <li><a href="./pages/productos.html">Productos</a></li>
-                            <li><a href="./pages/noticias.html">Noticias</a></li>
+                            <li><a href="">Noticias</a></li>
                             <li><a href="./pages/contacto.html">Contacto</a></li>
                         </ul>
                     </div>
@@ -96,11 +107,11 @@
                                 </div>
                         </div>
                 <div class="footer-links">
-                    <h4>Descargas</h4>
-                    <div>
+                    <h4>Descarga</h4>
+                    <div class="descarga_link">
                         <ul>
-                            <li><a href="">logo descarga google play</a></li>
-                            <li><a href="">logo descarga app store E.R.</a></li>
+                            <li ><img src="../img/descarga_gplay.png" alt="descarga de google play" class="img_google"></li>
+                            <li ><img src="../img/descargarap.png" alt="descarga de app store" class="img_google"></li>
                         </ul>>
                     </div>
                 </div>

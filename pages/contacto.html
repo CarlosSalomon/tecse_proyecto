@@ -14,35 +14,27 @@
 </head>
 <body>
 
-<header>
-    <div class="banner_contacto">
-
-    <div class="contenedor_header">
-            <h1>CONTACTO</h1> </div>
-            <div><img class="logo" src="../img/logo png.png" alt="logo empresa TECSE"></div>
-
-            <div class="form_buscar">
-                    <label for="buscar_producto" id="label">busqueda</label><!-- lo oculto por estetica profesor manifesto  que si es posible lo dejemos -->
-                    <input type="search" placeholder="Buscar producto..." autoclomplete="on" id="buscar_producto">
-                    <input type="submit" value="Buscar" class="boton_buscar">
-                    
-            </div>
-    </div>
-
-<div id="barra_navegacion">
-      <nav id="menu">
-          <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../pages/nosotros.html">Nosotros</a></li>
-              <li><a href="../pages/productos.html">Productos</a></li>
-              <li><a href="../pages/noticias.html">Noticias</a></li>
-              <li><a href="">Contacto</a></li>
-          </ul>
-      </nav>
-</div>
-
-
-</header>
+    <header class="header">
+        <div class="header__banner-contacto">
+            <div class="header__contenedor">
+                    <h1>CONTACTO</h1> </div>
+                    <div class="header__contenedor-logo"><img class="logo__img" src="../img/logo png.png" alt="logo empresa TECSE"></div>
+                    <div class="form_buscar">
+                            <label for="buscar_producto" class="label">busqueda</label>
+                            <input type="search" placeholder="Buscar producto..." autoclomplete="on" id="buscar_producto">
+                            <input type="submit" value="Buscar" class="boton_buscar">
+                    </div>
+        </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="../pages/productos.html">Productos</a></li>
+                    <li><a href="../pages/noticias.html">Noticias</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
 
 <main>
 
@@ -94,10 +86,9 @@
             </label>
         </form><br>
         <div class="boton_form">
-        <form >
-            <input type="submit" value="Enviar" class="boton_buscar">
-            <input type="submit" value="Reset" class="boton_buscar">
-        </form></div>
+            <input type="submit" value="Enviar" class="boton_formulario">
+            <input type="submit" value="Reset" class="boton_formulario">
+        </div>
 
     </div>
     <div class="img_formulario">
@@ -114,48 +105,48 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.201004704279!2d-60.51352938818928!3d-31.765003213083926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44dc8473ba3dd%3A0x967fb915f714ad8e!2sGral.%20Gervasio%20Artigas%201742%2C%20Paran%C3%A1%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1682432928579!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 </main>
-    <footer class="footer">
-        <div class="contenedor_footer">
-                <div class="footer-row">
+<footer class="footer">
+    <div class="contenedor_footer">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Acerca de..</h4>
+                    <ul>
+                        <li><a href="">Legales</a></li>
+                        <li><a href="">Privacidad</a></li>
+                        <li><a href="">343116487</a></li>
+                        <li><a href="">Av. Artigas 1752, Parana, E.R.</a></li>
+                    </ul>
+                </div>
                     <div class="footer-links">
-                        <h4>Acerca de..</h4>
+                        <h4>Tecse</h4>
                         <ul>
-                            <li><a href="">Legales</a></li>
-                            <li><a href="">Privacidad</a></li>
-                            <li><a href="">+954343116487</a></li>
-                            <li><a href="">Av. Artigas 1752, Parana, E.R.</a></li>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                            <li><a href="./pages/productos.html">Productos</a></li>
+                            <li><a href="./pages/noticias.html">Noticias</a></li>
+                            <li><a href="">Contacto</a></li>
                         </ul>
                     </div>
                         <div class="footer-links">
-                            <h4>Tecse</h4>
-                            <ul>
-                                <li><a href="../index.html">Inicio</a></li>
-                                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                                <li><a href="../pages/productos.html">Productos</a></li>
-                                <li><a href="../pages/noticias.html">Noticias</a></li>
-                                <li><a href="">Contacto</a></li>
-                            </ul>
+                            <h4>Siguenos</h4>
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </div>
                         </div>
-                            <div class="footer-links">
-                                <h4>Siguenos</h4>
-                                    <div class="social-link">
-                                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a href=""><i class="fab fa-instagram"></i></a>
-                                        <a href=""><i class="fab fa-twitter"></i></a>
-                                        <a href=""><i class="fab fa-linkedin"></i></a>
-                                    </div>
-                            </div>
-                    <div class="footer-links">
-                        <h4>Importante</h4>
-                        <div>
-                            <ul>
-                                <li class="descarga_link"><img src="../img/descarga_gplay.png" alt="" class="img_google"></li>
-                                <li class="descarga_link"><img src="../img/descargarap.png" alt="" class="img_google"></li>
-                            </ul>>
-                        </div>
+                <div class="footer-links">
+                    <h4>Descarga</h4>
+                    <div class="descarga_link">
+                        <ul>
+                            <li ><img src="../img/descarga_gplay.png" alt="descarga de google play" class="img_google"></li>
+                            <li ><img src="../img/descargarap.png" alt="descarga de app store" class="img_google"></li>
+                        </ul>>
                     </div>
                 </div>
-        </div>
-    </footer>
+            </div>
+    </div>
+</footer>
 </body>
 </html>

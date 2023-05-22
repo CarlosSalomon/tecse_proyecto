@@ -13,47 +13,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!-- link conexion a estilos  ICONOS Redes sociales -->
 </head>
 <body>
+    <header class="header">
+        <div class="header__banner-nosotros">
+            <div class="header__contenedor">
+                    <h1>NOSOTROS</h1> </div>
+                    <div class="header__contenedor-logo"><img class="logo__img" src="../img/logo png.png" alt="logo empresa TECSE"></div>
+                    <div class="form_buscar">
+                            <label for="buscar_producto" class="label">busqueda</label>
+                            <input type="search" placeholder="Buscar producto..." autoclomplete="on" id="buscar_producto">
+                            <input type="submit" value="Buscar" class="boton_buscar">
+                    </div>
+        </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="../pages/productos.html">Productos</a></li>
+                    <li><a href="../pages/noticias.html">Noticias</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
 
-<header>
-    <div class="banner_nosotros">
-<!-- TITULO PRINCIPAL OCULTO -->
-<div class="contenedor_header"><h1>NOSOTROS</h1></div>
-            <img class="logo" src="../img/logo png.png" alt="logo empresa TECSE">
-            <div class="form_buscar">
-                <label for="buscar_producto" id="label">busqueda</label><!-- lo oculto por estetica profesor manifesto  que si es posible lo dejemos -->
-                <input type="search" placeholder="Buscar producto..." autoclomplete="on" id="buscar_producto">
-                <input type="submit" value="Buscar" class="boton_buscar">
-            </div>
-    </div>
-<div id="barra_navegacion">
-      <nav id="menu">
-          <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../pages/productos.html">Productos</a></li>
-              <li><a href="../pages/noticias.html">Noticias</a></li>
-              <li><a href="../pages/contacto.html">Contacto</a></li>
-              <li><a href="">Nosotros</a></li>
-          </ul>
-      </nav>
-</div>
-</header>
 
 <main>
-    <section class="section_nosotros">
-        <div class="logoytexto">
-            <img class="detalle_nosotros" src="../img/logo png.png" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit neque ad quo! Consequatur officia laudantium veniam nisi fugit odit molestias velit doloribus dolorem officiis necessitatibus, tempore atque. Placeat, maxime esse, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit neque ad quo! Consequatur officia laudantium veniam nisi fugit odit molestias velit doloribus dolorem officiis necessitatibus, tempore atque. Placeat, maxime esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit neque ad quo! Consequatur officia laudantium veniam nisi fugit odit molestias velit doloribus dolorem officiis necessitatibus, tempore atque. Placeat, maxime esse.</p>
+    <section class="nosotros__section">
+        <div class="nosotros__section-logoytexto">
+            <img class="nosotros__section-logo" src="../img/logo png.png" alt="logo de la empresa">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit neque ad quo! Consequatur officia laudantium veniam nisi fugit odit molestias velit doloribus dolorem officiis necessitatibus, tempore atque. Placeat, maxime esse, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit neque ad quo! Consequatur officia laudantium veniam nisi fugit odit molestias velit doloribus dolorem officiis </p>
         </div>
-        <div class="div_nosotros1">
+        <div class="nosotros__section-img">
             <img class="img_nosotros1" src="../img/galeria3.jpg" alt="">
         </div>
     </section>
-    <div class="div_equipo">
-        <p>_______________________________</p>
-        <span>Nuestro Equipo</span>
-        <p>_______________________________</p>
-    </div>
-    <section class="section_gerente" >
+        <div class="div_equipo">
+            <p >_______________________________</p>
+            <span>Nuestro Equipo</span>
+            <p>_______________________________</p>
+        </div>
+    <section class="nosotros__section-gerente" >
         <div class="logoytexto2">
             <img class="detalle_gerente" src="../img/gerente.jpg" alt="">
             <h3>Lujan Ojeda</h3>
@@ -63,7 +61,6 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur similique porro voluptatum iure soluta fugit repellat, omnis rerum quo odit voluptas dolorem ipsum officia rem cumque, consequatur consequuntur enim eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur ea harum repellat at dolorem ex, aliquam quibusdam officia eaque quam, autem totam eum distinctio, et excepturi iure doloribus quaerat iusto.</p>
         </div>
     </section>
-
     <section class="personal">
             <div class="detalle_personal">
             <img class="detalle_gerente" src="../img/personal2.jpg" alt="">
@@ -88,46 +85,48 @@
     </section>
 
 </main>
-    <footer class="footer">
-        <div class="contenedor_footer">
-                <div class="footer-row">
+<footer class="footer">
+    <div class="contenedor_footer">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Acerca de..</h4>
+                    <ul>
+                        <li><a href="">Legales</a></li>
+                        <li><a href="">Privacidad</a></li>
+                        <li><a href="">343116487</a></li>
+                        <li><a href="">Av. Artigas 1752, Parana, E.R.</a></li>
+                    </ul>
+                </div>
                     <div class="footer-links">
-                        <h4>Acerca de..</h4>
+                        <h4>Tecse</h4>
                         <ul>
-                            <li><a href="">Legales</a></li>
-                            <li><a href="">Privacidad</a></li>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="">Nosotros</a></li>
+                            <li><a href="./pages/productos.html">Productos</a></li>
+                            <li><a href="./pages/noticias.html">Noticias</a></li>
+                            <li><a href="./pages/contacto.html">Contacto</a></li>
                         </ul>
                     </div>
                         <div class="footer-links">
-                            <h4>Tecse</h4>
-                            <ul>
-                                <li><a href="../index.html">Inicio</a></li>
-                                <li><a href="../pages/productos.html">Productos</a></li>
-                                <li><a href="../pages/noticias.html">Noticias</a></li>
-                                <li><a href="../pages/contacto.html">Contacto</a></li>
-                                <li><a href="">Nosotros</a></li>
-                            </ul>
+                            <h4>Siguenos</h4>
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </div>
                         </div>
-                            <div class="footer-links">
-                                <h4>Siguenos</h4>
-                                    <div class="social-link">
-                                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a href=""><i class="fab fa-instagram"></i></a>
-                                        <a href=""><i class="fab fa-twitter"></i></a>
-                                        <a href=""><i class="fab fa-linkedin"></i></a>
-                                    </div>
-                            </div>
-                    <div class="footer-links">
-                        <h4>Importante</h4>
-                        <div>
-                            <ul>
-                                <li><img src="../img/descarga_gplay.png" alt="descarga app desde google play" class="img_google"></li>
-                                <li><img src="../img/descargarap.png" alt="descargar desde app store " class="img_google"></li>
-                            </ul>>
-                        </div>
+                <div class="footer-links">
+                    <h4>Descarga</h4>
+                    <div class="descarga_link">
+                        <ul>
+                            <li ><img src="../img/descarga_gplay.png" alt="descarga de google play" class="img_google"></li>
+                            <li ><img src="../img/descargarap.png" alt="descarga de app store" class="img_google"></li>
+                        </ul>>
                     </div>
                 </div>
-        </div>
-    </footer>
+            </div>
+    </div>
+</footer>
 </body>
 </html>
