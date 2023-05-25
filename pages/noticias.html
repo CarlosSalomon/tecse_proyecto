@@ -14,10 +14,10 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__banner-noticias">
+        <div class="header__banner--noticias">
             <div class="header__contenedor">
                     <h1>NOTICIAS</h1> </div>
-                    <div class="header__contenedor-logo"><img class="logo__img" src="../img/logo png.png" alt="logo empresa TECSE"></div>
+                    <div class="header__logo"><img class="logo__img" src="../img/logo png.png" alt="logo empresa TECSE"></div>
                     <div class="form_buscar">
                             <label for="buscar_producto" class="label">busqueda</label>
                             <input type="search" placeholder="Buscar producto..." autoclomplete="on" id="buscar_producto">
@@ -37,39 +37,40 @@
     
 <main>
     
-<section class="section_noticias" >
-    <h2>Lo Último</h2>
+<section class="noticias" >
+    <h2> Destacadas</h2>
 
-    <div class="div_noticias">
+    <div class="noticias__contenedor">
 
-        <article class="noticia_principal"> 
-        <h3>TITULO</h3>
-        <img src="../img/conferencia.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure illum odio accusamus temporibus provident, earum ex illo a nostrum, culpa repellendus, labore repudiandae amet? Facere ab natus ipsam dolorem!</p>
+        <article class="noticias__principal"> 
+        <h3>SCATI anunció nuevos lanzamientos en el marco de los Xperience Events 2023 en Bogotá, Colombia</h3>
+        <img  src="../img/conferencia.jpg" alt="" class="noticias__img" >
+        <p>Ruijie Networks, uno de los principales proveedores de soluciones de redes y comunicaciones, recientemente organizó un emocionante evento en Turquía que atrajo a profesionales de TI, líderes empresariales y expertos en redes de todo el mundo.           El evento, que tuvo lugar en la hermosa ciudad de Estambul, fue una oportunidad única para explorar las últimas tendencias en tecnología de redes y discutir cómo la innovación puede impulsar el crecimiento empresarial. 
+        </p>
         </article>
 
 
-        <article class="noticia_secundaria" style="background-color: rgb(0, 68, 255);">
-            <h3>TITULO</h3>
-            <img src="../img/conferencia.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure illum odio accusamus temporibus provident, earum ex illo a nostrum, culpa repellendus, labore repudiandae amet? Facere ab natus ipsam dolorem!</p>
+        <article class="noticias__secundaria" >
+            <h3>Lo último en cámaras Web de Hikvision para la educación a distancia</h3>
+            <img src="../img/educacaion_hikvision.jpg" alt="">
+            <p>Las cámaras Web han alcanzado un nivel de innovación asombroso. Conozca los desarrollos de Hikvision ideales para el sector educativo.</p>
+        </article>
+        <article class="noticias__secundaria">
+            <h3>ANDICOM 2023 llega al Complejo Las Américas para impulsar el ecosistema digital</h3>
+            <img src="../img/ANDICOM.jpg" alt="">
+            <p>En esta edición 38 de ANDICOM 2023 la temática se desarrollará bajo el lema “Get into the Digital World” donde los visitantes vivirán una experiencia de integración de los negocios con el mundo digital. Conozca todas las novedades del evento…</p>
+        </article>
+        <article class="noticias__secundaria" >
+            <h3>¿Qué son y cómo funcionan las alarmas monitoreadas?</h3>
+            <img src="../img/alarma_monitoreada.jpg" alt="">
+            <p>La evolución de la tecnología de las últimas décadas ha provocado cambios en nuestros hábitos de consumo, las relaciones con los sistemas electrónicos han cambiado para siempre, la accesibilidad y la facilidad de uso de las distintas tecnologías permitieron la masificación de ciertos productos, entre ellos los sistemas de seguridad para casas, por ejemplo, una alarma, que se ha transformado en un elemento esencial a la hora de proteger bienes y vidas humanas.</p>
+        </article>
+        <article class="noticias__secundaria" >
+            <h3>Workshop Nacional sobre Chip-Off para Fuerzas del Orden (Desde el 3 hasta el 4 de Junio)</h3>
+            <img src="../img/Chip_Off.jpg" alt="">
+            <p>TECSE auspició el 1er. Workshop Nacional sobre Chip-Off destinado a miembros de Fuerzas de la Ley, quienes pudieron capacitarse junto a profesionales</p>
         </article>
 
-        <article class="noticia_secundaria" style="background-color: rgb(0, 68, 255);">
-            <h3>TITULO</h3>
-            <img src="../img/conferencia.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure illum odio accusamus temporibus provident, earum ex illo a nostrum, culpa repellendus, labore repudiandae amet? Facere ab natus ipsam dolorem!</p>
-        </article>
-        <article class="noticia_secundaria" style="background-color: rgb(0, 68, 255);">
-            <h3>TITULO</h3>
-            <img src="../img/conferencia.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure illum odio accusamus temporibus provident, earum ex illo a nostrum, culpa repellendus, labore repudiandae amet? Facere ab natus ipsam dolorem!</p>
-        </article>
-        <article class="noticia_secundaria" style="background-color: rgb(0, 68, 255);">
-            <h3>TITULO</h3>
-            <img src="../img/conferencia.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure illum odio accusamus temporibus provident, earum ex illo a nostrum, culpa repellendus, labore repudiandae amet? Facere ab natus ipsam dolorem!</p>
-        </article>
 
     </div>
 </section>
@@ -77,8 +78,8 @@
 
 <footer class="footer">
     <div class="contenedor_footer">
-            <div class="footer-row">
-                <div class="footer-links">
+            <div class="footer__row">
+                <div class="footer__links">
                     <h4>Acerca de..</h4>
                     <ul>
                         <li><a href="">Legales</a></li>
@@ -87,17 +88,17 @@
                         <li><a href="">Av. Artigas 1752, Parana, E.R.</a></li>
                     </ul>
                 </div>
-                    <div class="footer-links">
+                    <div class="footer__links">
                         <h4>Tecse</h4>
                         <ul>
-                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="">Inicio</a></li>
                             <li><a href="./pages/nosotros.html">Nosotros</a></li>
                             <li><a href="./pages/productos.html">Productos</a></li>
-                            <li><a href="">Noticias</a></li>
+                            <li><a href="./pages/noticias.html">Noticias</a></li>
                             <li><a href="./pages/contacto.html">Contacto</a></li>
                         </ul>
                     </div>
-                        <div class="footer-links">
+                        <div class="footer__links">
                             <h4>Siguenos</h4>
                                 <div class="social-link">
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -106,7 +107,7 @@
                                     <a href=""><i class="fab fa-linkedin"></i></a>
                                 </div>
                         </div>
-                <div class="footer-links">
+                <div class="footer__links">
                     <h4>Descarga</h4>
                     <div class="descarga_link">
                         <ul>

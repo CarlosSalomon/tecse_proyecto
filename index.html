@@ -13,49 +13,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!-- link conexion a estilos  ICONOS Redes sociales -->
 </head>
 <body>
-<header>
-<div class="div_header">
-          <h1 class="principal"> Tecnologia y Seguridad Electronica</h1>
-        <div class="cont_logo"> <img src="./img/logo png.png" alt="logo empresa TECSE">
+    <header class="header">
+        <div class="header__banner--index">
+            <div class="header__contenedor--index">
+                    <h1>TECNOLOGIA Y SEGURIDAD ELECTRONICA</h1> </div>
+                    <div class="header__logo"><img class="logo__img" src="../img/logo png.png" alt="logo empresa TECSE"></div>
+                    <div class="form_buscar">
+                            <label for="buscar_producto" class="label">busqueda</label>
+                            <input type="search" placeholder="Buscar producto..." autoclomplete="on" id="buscar_producto">
+                            <input type="submit" value="Buscar" class="boton_buscar">
+                    </div>
         </div>
-
-            <div class="form_buscar">
-                    <label for="buscar_producto" class="label">busqueda</label><!-- lo oculto por estetica profesor manifesto  que si es posible lo dejemos -->
-                    <input type="search" placeholder="Buscar producto..." autoclomplete="on" class="buscar_producto">
-                    <input type="submit" value="Buscar" class="boton_buscar">
-                </div>
-            </div>
-                <nav class="menu">
-                    <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="./pages/productos.html">Productos</a></li>
-                        <li><a href="./pages/noticias.html">Noticias</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-        
-
-</header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="./pages/noticias.html">Noticias</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
 <main class="main_index">
 <section class="sec_mis">
-        <h2 class="mision">Mision</h2>
-        <img class="img_index" src="./img/detalle.png" alt="imagenes de elementos de seguridad electronica">
-        <p class="tipo_fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus molestias incidunt nihil ab nemo quia voluptas temporibus illum, ipsam id, doloribus magnam Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus molestias incidunt nihil ab nemo quia voluptas temporibus illum, ipsam id, doloribus magnam Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus molestias incidunt nihil ab nemo quia voluptas temporibus illum, ipsam id, doloribus magnam Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus molestias incidunt nihil ab nemo quia voluptas temporibus illum, ipsam id, doloribus magnam </p></div>
+        <h2 class="sec_mis__titulo">Mision</h2>
+        <img class="sec_mis__img" src="./img/detalle.png" alt="imagenes de elementos de seguridad electronica">
+        <p class="sec_mis__texto">TECSE se especializa en ofrecer equipos con tecnología de avanzada para aplicaciones de seguridad, Sistemas de Cámaras de Vigilancia, Comunicacion de cifrado militar entre otros dispositivos electronicos . La empresa fue fundada en el año 1985, en Buenos Aires Argentina, por Carlos E. Salomon bajo el nombre de Max Security  para luego en el año 2016 convertirse en TECSE (Tecnología  y  Seguridad  Electrónica), ya con oficinas en España (2001) y Argentina (1990). Nuestros clientes abarcan desde fuerzas del orden, fuerzas armadas, áreas de justicia, medianas y grandes empresas y profesionales del mundo de la seguridad, como asi tambien toda persona que tenga como prioridad la seguridad de su hogar.</p></div>
 </section>
 
 <section class="sec_mis2">
-    <div class="alineacion1">
+    <div class="sec_mis2__titulo">
         <h2 >Estrategia</h2>
     </div>
-    <p class="tipo_fuente-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus molestias incidunt nihil ab nemo quia voluptas temporibus illum, ipsam  id, doloribus magnam Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus molestias incidunt nihil ab nemo quia voluptas temporibus illum, ipsam id, doloribus magnam Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus molestias incidunt nihil ab nemo quia voluptas temporibus illum, ipsam id, doloribus magnam Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus molestias incidunt nihil ab nemo quia voluptas temporibus illum, ipsam id, doloribus magnam </p>
+    <p class="sec_mis2__texto">Orientamos nuestros esfuerzos a la satisfacción de nuestros clientes, acompañándolos desde el proceso de selección de equipamiento hasta la implementación acorde a sus necesidades. Los equipos de alta tecnología que ofrecemos requieren de un asesoramiento profesional en todas sus etapas. Nuestro equipo experto trabajará con usted para identificar su requerimiento. Después de su compra, las líneas telefónicas están abiertas para el brindarle el mejor soporte técnico en nuestra especialidad.</p>
     <iframe class="video_index" src="https://www.youtube.com/embed/IhfScpB8DNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
 </section>
 
         <div class="suscribir">
-            <h3 class="newh2">SUSCRÍBETE A NUESTRO NEWSLETTER</h3>
-                <h4 class="newh4">Recibí las últimas novedades de nuestra web</h4>
+            <h3 class="suscribir__h3">SUSCRÍBETE A NUESTRO NEWSLETTER</h3>
+                <h4 class="suscribir__h4">Recibí las últimas novedades de nuestra web</h4>
                 <div class="sus_flex">
             <input type="email" class="email" placeholder="email" autocomplete="email">
             <input type="text" class="email"placeholder="Nombre y apellido" autocomplete="name">
@@ -63,20 +60,20 @@
         </div>
         </div>
     <div class="partners">
-        <h2 id="tit_partners">Nuestros Partners</h2>
+        <h2 class="partners_titulo">Nuestros Partners</h2>
     </div>
     <div class="partners2">
-        <img class="img_partners" src="./img/edr.jpg" alt="logo empresa edrtools">
-        <img class="img_partners" src="./img/oxygen.jpg" alt="logo empresa oxigen forensics">
-        <img class="img_partners" src="./img/sociallink.jpg" alt="logo empresa social links">
-        <img class="img_partners" src="./img/tactical.jpg" alt="logo empresa tactical tracking">
+        <img class="partners2__img" src="./img/edr.jpg" alt="logo empresa edrtools">
+        <img class="partners2__img" src="./img/oxygen.jpg" alt="logo empresa oxigen forensics">
+        <img class="partners2__img" src="./img/sociallink.jpg" alt="logo empresa social links">
+        <img class="partners2__img" src="./img/tactical.jpg" alt="logo empresa tactical tracking">
     </div>
     
 </main>
 <footer class="footer">
     <div class="contenedor_footer">
-            <div class="footer-row">
-                <div class="footer-links">
+            <div class="footer__row">
+                <div class="footer__links">
                     <h4>Acerca de..</h4>
                     <ul>
                         <li><a href="">Legales</a></li>
@@ -85,7 +82,7 @@
                         <li><a href="">Av. Artigas 1752, Parana, E.R.</a></li>
                     </ul>
                 </div>
-                    <div class="footer-links">
+                    <div class="footer__links">
                         <h4>Tecse</h4>
                         <ul>
                             <li><a href="">Inicio</a></li>
@@ -95,7 +92,7 @@
                             <li><a href="./pages/contacto.html">Contacto</a></li>
                         </ul>
                     </div>
-                        <div class="footer-links">
+                        <div class="footer__links">
                             <h4>Siguenos</h4>
                                 <div class="social-link">
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -104,12 +101,12 @@
                                     <a href=""><i class="fab fa-linkedin"></i></a>
                                 </div>
                         </div>
-                <div class="footer-links">
+                <div class="footer__links">
                     <h4>Descarga</h4>
                     <div class="descarga_link">
                         <ul>
-                            <li ><img src="../img/descarga_gplay.png" alt="descarga de google play" class="img_google"></li>
-                            <li ><img src="../img/descargarap.png" alt="descarga de app store" class="img_google"></li>
+                            <li ><img src="./img/descarga_gplay.png" alt="descarga de google play" class="img_google"></li>
+                            <li ><img src="./img/descargarap.png" alt="descarga de app store" class="img_google"></li>
                         </ul>>
                     </div>
                 </div>
