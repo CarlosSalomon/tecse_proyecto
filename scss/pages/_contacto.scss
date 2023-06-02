@@ -82,23 +82,13 @@
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-    cursor: pointer;
-
-& :hover > .capa{
-    opacity: 1;
-    visibility: visible;}
-
-& :hover > .capa h3{
-    margin-bottom: 5px;
-    font-size: 2rem;}
-
+    cursor: pointer;}
 & img{
-    width: 100%;
-    height: 100%;
-    transition: all 500ms ease-out;}
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out;}}
 
-
-.capa{
+.img_formulario figure .capa{
     position: absolute;
     top: 0;
     width: 100%;
@@ -107,22 +97,31 @@
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
-    text-align: center;
+    text-align: center;}
 
-& h3{
+.img_formulario figure:hover > .capa{
+        opacity: 1;
+        visibility: visible;}
+
+.img_formulario figure:hover > .capa h3{
+        margin-bottom: 5px;
+        font-size: 2rem;}
+
+.img_formulario figure .capa h3{
     color: #ffffff;
     font-weight: 200;
     margin-bottom: 120px;
     transition: all 500ms ease-out;
     margin-top: 30px;}
-& p{
+
+.img_formulario figure .capa p{
     color: #ffffff;
     font-size: 1rem;
     line-height: 1;
     width: 100%;
     max-width:220px ;
     margin: auto;
-    text-align: justify;}}}}
+    text-align: justify;}
 
 .boton_form{
     display: flex;}
