@@ -1,0 +1,156 @@
+.nosotros_section {
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+&__logoytexto{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+    font-size: 1rem;
+    text-align: justify;
+    margin:  0 auto;}
+&__logo{
+    display: flex;
+    margin: 0 auto;
+    width: 150px;
+    height: 100px;}
+&__img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;}}
+
+.img_nosotros1{
+    display: flex;
+    width: 90%;
+    height: 70%;
+    margin-left: 50px;
+    border-radius: 20px;
+    margin: 15px;}
+
+.div_equipo{
+    display: grid;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #27576d;
+    justify-content:space-evenly;
+    align-content: center;}
+
+.gerente{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+&__img{
+    width: 100px;
+    border-radius: 75px;}
+
+&__logoytexto{
+    display: flex;
+    color: #146C94;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;}}
+
+.personal{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+&__contenedor{
+    color: #146C94;}
+&__img{
+    width: 100px;
+    border-radius: 75px;}}
+
+.texto_equipo{
+    display: flex;
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0 auto;
+    width: 95%;}
+
+@media(min-width:768px){
+
+.nosotros_section {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+width: 100%;
+
+&__logoytexto{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 100%;
+    font-size: 1rem;
+    text-align: justify;}
+
+&__logo{
+        display: flex;
+        margin: 0 auto;
+        width: 250px;
+        height: 150px;}
+
+&__img{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;}}
+
+.div_equipo{
+display: flex;
+flex-direction: row;
+width: 100%;
+font-size: 1rem;
+color: #27576d;}
+
+.gerente{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+justify-content: center;
+align-items: center;}
+
+.texto_equipo{
+display: flex;
+font-size: 1rem;
+text-align: justify;
+justify-content: center;
+align-items: center;}
+
+.personal__img{
+width: 100px;
+border-radius: 75px;}}
+
+/* NOSOTROS HTML-RESPONSIVE 1024PX*/
+@media(min-width:1024px){
+.gerente{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-content: center;
+align-items: center;
+
+&__img{
+    width: 150px;
+    border-radius: 75px;}
+}
+
+.div_equipo{
+font-size: 2rem;}
+
+.texto_equipo{
+grid-column: 2/4;
+font-size: 1.2rem;}
+
+.nosotros_section__logoytexto{
+font-size: 1.2rem;}
+
+.personal__img{
+width: 150px;
+border-radius: 75px;}
+
+}

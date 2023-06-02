@@ -1,0 +1,118 @@
+footer{
+    list-style: none;}
+
+.footer{
+    background-color: #000000;
+    width: 100%;
+
+&__row{
+    width: 100%;
+    justify-content: center;
+    align-items: center;}
+
+&__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+    justify-content: center;
+& h4 {
+    font-size: 2rem;
+    color: #F6F1F1;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #19A7CE;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;}
+& ul li a{
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #F6F1F1;
+    margin-bottom: 15px ;
+    transition: all .3s ease;
+& :hover {
+    color: #ffffff;
+    padding-left: 6px;}}}}
+
+.contenedor_footer{
+    max-width: 100%;
+    margin: 0 auto;}
+
+.social-link a{
+    display: inline-block;
+    min-width: 30px;
+    width: 20px;
+    background-color: #575757;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+
+    &:hover{
+        background-color: #19A7CE;}
+}
+.descarga_link{
+    display: flex;
+    cursor: pointer;
+
+    & ul li {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        margin-bottom: 15px;}}
+
+.img_google{
+    width: 40%;}
+
+@media(min-width:768px){
+
+.contenedor_footer{
+display: flex;
+width: 100%;}
+        
+.footer__row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);}
+
+.footer__links{
+    display: inline-block;
+    height: 100%;
+    & h4 {
+        font-size: 1.2rem;}}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    & a{
+        display: inline-block;
+        min-width: 27px;
+        width: 18px;
+        background-color: #575757;
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 27px;
+        border-radius: 60%;
+        color: #ffffff;
+        transition: all .5s ease;}}
+
+}
+/* FOOTER RESPONSIVE 1440PX*/
+@media(min-width:1440px){
+
+.footer__links h4 {
+font-size: 2rem;}
+
+.footer__links ul li a{ 
+font-size: 1.5rem;}
+
+.social-link a{
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    line-height: 60px;} }
