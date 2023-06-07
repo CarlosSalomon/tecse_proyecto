@@ -165,6 +165,7 @@ html {
   font-size: 1.2rem;
   justify-content: center;
   margin: 5px auto;
+  box-shadow: 6px 6px 10px #1f1b1b;
 }
 .sec_mis__texto {
   font-size: 1rem;
@@ -192,6 +193,7 @@ html {
   font-size: 1rem;
   justify-content: center;
   margin: 10px auto;
+  box-shadow: 6px 6px 10px #1f1b1b;
 }
 .sec_mis2__texto {
   font-size: 1rem;
@@ -224,7 +226,7 @@ html {
   height: 100%;
 }
 .suscribir__h3 {
-  color: white;
+  color: #ffffff;
   font-size: 2rem;
 }
 .suscribir__h4 {
@@ -262,7 +264,7 @@ html {
   justify-content: center;
 }
 .partners__titulo {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   text-align: center;
   font-size: 2rem;
   height: 5px;
@@ -278,6 +280,9 @@ html {
 }
 .partners2__img {
   width: 40%;
+}
+.partners2__img:hover {
+  transform: scale(90%);
 }
 
 @media (min-width: 768px) {
@@ -594,7 +599,7 @@ html {
 }
 @media (min-width: 1024px) {
   .boton_formulario {
-    width: 20%;
+    width: 15%;
   }
 }
 .nosotros_section {
@@ -640,6 +645,7 @@ html {
   color: #27576d;
   justify-content: space-evenly;
   align-content: center;
+  filter: drop-shadow(1px 1px 1px black);
 }
 
 .gerente {
@@ -814,6 +820,9 @@ html {
     background-color: #ffffff;
     align-items: center;
   }
+  .tarjeta:hover {
+    transform: scale(110%);
+  }
 }
 @media (min-width: 1024px) {
   .h2_productos {
@@ -932,15 +941,15 @@ html {
   .noticias__principal {
     background-color: #ffffff;
     display: flex;
-    width: 600px;
+    width: 700px;
     text-align: center;
     border: rgba(5, 59, 110, 0.6862745098) solid 2px;
     border-radius: 6px;
   }
   .noticias__secundaria {
     display: flex;
-    width: 400px;
-    height: 444px;
+    width: 500px;
+    height: 500px;
     text-align: justify;
     border: rgba(5, 59, 110, 0.6862745098) solid 2px;
     border-radius: 6px;

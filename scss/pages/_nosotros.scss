@@ -34,9 +34,11 @@
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
-    color: #27576d;
+    color: $color-verde;
     justify-content:space-evenly;
-    align-content: center;}
+    align-content: center;
+    filter: drop-shadow(1px 1px 1px black);
+}
 
 .gerente{
     display: grid;
@@ -49,7 +51,7 @@
 
 &__logoytexto{
     display: flex;
-    color: #146C94;
+    color: $color-cyan;
     flex-direction: column;
     align-items: center;
     font-size: 1rem;}}
@@ -62,7 +64,7 @@
     text-align: center;
 
 &__contenedor{
-    color: #146C94;}
+    color: $color-cyan;}
 &__img{
     width: 100px;
     border-radius: 75px;}}
@@ -107,7 +109,7 @@ display: flex;
 flex-direction: row;
 width: 100%;
 font-size: 1rem;
-color: #27576d;}
+color: $color-verde;}
 
 .gerente{
 display: grid;

@@ -1,12 +1,12 @@
 .main-contacto{
-    background-color: #27576d}
+    background-color: $color-verde}
 
 .cont_formulario{
-    background-color: #27576d;
+    background-color: $color-verde;
     display: grid;}
 
 .contenedor_formularioh1{
-    color: #F6F1F1;
+    color: $color-marfil;
     font-size: 2rem;
     display: flex;
     justify-content: center;
@@ -14,13 +14,13 @@
     text-align: center;}
 
 .datos{
-    background-color: #27576d;
+    background-color: $color-verde;
     width: 90%;
     margin: 0 auto;
     margin-bottom: 40px;}
 
 .form {
-    background-color: #27576d;
+    background-color: $color-verde;
     width: 100%;
     height: 50px;
     max-width: 400px;
@@ -30,7 +30,7 @@
     width: 90%;
     height: 90%;
     background: none;
-    color: #ffffff;
+    color: $color-blanco;
     padding-top: 20px;
     border: none;
     outline: 0px;}
@@ -50,7 +50,7 @@
     bottom: -1px;
     width: 100%;
     height: 100%;
-    border-bottom: 3px solid #19A7CE;
+    border-bottom: 3px solid $color-celeste;
     transform: translateX(-100%);
     transition:all 0.3s ease;}}}
 .text-nomb{
@@ -58,12 +58,12 @@
     bottom: 5px;
     left: 0;
     transition:all 0.3s ease;
-    color: #ffffff;}
+    color: $color-blanco;}
 
 .form input:focus + .lbl-nombre .text-nomb,.form input:valid + .lbl-nombre .text-nomb {
     transform: translateY(-150%);
     font-size:1rem;
-    color:#19A7CE;}
+    color:$color-celeste;}
 
 .form input:focus + .lbl-nombre:after,.form input:valid + .lbl-nombre:after{
     transform: translateX(-0%);}
@@ -108,14 +108,14 @@
         font-size: 2rem;}
 
 .img_formulario figure .capa h3{
-    color: #ffffff;
+    color: $color-blanco;
     font-weight: 200;
     margin-bottom: 120px;
     transition: all 500ms ease-out;
     margin-top: 30px;}
 
 .img_formulario figure .capa p{
-    color: #ffffff;
+    color: $color-blanco;
     font-size: 1rem;
     line-height: 1;
     width: 100%;
@@ -127,30 +127,30 @@
     display: flex;}
 
 .cont_formulario{
-    background-color: #27576d;
+    background-color: $color-verde;
     display: flex;
     justify-content: center;}
 
 .datos-gral{
-    background-color: #27576d;
+    background-color: $color-verde;
     display: grid;
     width: 100%;}
 
 
 .boton_formulario{background-color: rgb(63, 62, 62);
-    color: #F6F1F1;
+    color: $color-marfil;
     width: 30%;
     height: 30px;
     line-height: 10px;
     border-radius: 5px;
     border-style: solid;
-    border-color: #19A7CE;
+    border-color: $color-celeste;
     margin-left: 30px;
     margin-bottom: 15px;
     cursor: pointer;}/*estilo del boton*/
 
 .map-responsive{
-    background-color: #27576d;
+    background-color: $color-verde;
     overflow:hidden;
     padding-bottom:40%;
     position:relative;
@@ -175,15 +175,15 @@
     height: 100%;}
 
 .boton_formulario{background-color: rgb(63, 62, 62);
-    color: #F6F1F1;
+    color: $color-marfil;
     width: 30%;
     height: 30px;
     line-height: 10px;
     border-radius: 5px;
     border-style: solid;
-    border-color: #19A7CE;
+    border-color: $color-celeste;
     cursor: pointer;}}
 
 @media(min-width:1024px){
 .boton_formulario{
-    width: 20%;}}
+    width: 15%;}}
