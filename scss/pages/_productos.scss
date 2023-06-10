@@ -53,7 +53,7 @@
 @media(min-width:1024px){
 
 .h2_productos{
-font-size: 2.5rem;}
+font-size: 4rem;}
 
 .header__contenedor{
 font-size: 3rem;
@@ -69,4 +69,11 @@ height: 150px;}
     margin: 20px;
     padding: 5px;
     background-color:$color-blanco;
-    align-items: center;}}
+    align-items: center;
+    &:hover{
+        transform: scale(90%)}
+
+&__btn{
+    width: 120px;
+    height: 50px;}
+    }}

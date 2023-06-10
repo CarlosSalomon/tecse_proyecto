@@ -15,8 +15,8 @@
 
     &__titulo{
         display: flex;
-        background-color: $color-cyan ;
         color: $color-blanco;
+        background-color: $color-cyan;
         border: $color-celeste solid 5px;
         border-radius: 50px;
         width: 80px;
@@ -77,11 +77,17 @@
     background-size: cover;
     text-align: center;
     padding: 50px 50px;
-    width:99% ;
+    width:100% ;
     height: 100%;
 
-    &__h3{color: $color-blanco;
-        font-size: 2rem;}
+    &__h3{
+        
+        color: $color-blanco;
+        font-size: 3rem;
+        animation-name:mover-news;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;}
+    
 
     &__h4{color: rgb(0, 0, 0);
         font-size: 1.2rem;}}
@@ -127,13 +133,11 @@
     &__img{
         width: 40%;
         &:hover{
-    transform: scale(90%)
-    
-    }}}
+    transform: scale(90%)}}}
 
 @media(min-width:768px){
 .sec_mis{
-    display: grid;  
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
 
 &__img{ 
@@ -185,7 +189,7 @@ margin: 0 auto ;}
     height: auto;}
 
 .sus_flex{
-    display: flex; 
+    display: flex;
     flex-direction: row;
     gap: 5px;}
 
@@ -201,11 +205,11 @@ margin: 0 auto ;}
     height: 100%;
 
 &__img{
-    width: 20%; }}     
+    width: 20%; }}
 
 .form_buscar{
     width: 350px;
-    display: flex; 
+    display: flex;
     justify-content: end;
     margin-right: 5px;
     margin-top: 15px;}
@@ -230,3 +234,20 @@ margin: 0 auto ;}
 
 .video_index{
     height: 340px;}}
+
+    @media(min-width:2200px){
+
+.sec_mis__texto {
+    font-size: 2rem;}
+
+.sec_mis2{
+    margin-bottom: 100px;
+    justify-content: center;
+
+&__texto {
+    font-size: 2rem;}}
+
+.video_index{
+    width: 800px;
+    height: 440px;
+    margin-left: 200px;}}

@@ -1,9 +1,18 @@
+
 $color-cyan: #146C94;
+
 $color-blanco: #ffffff;
+
 $color-celeste: #19A7CE;
+
 $color-gris:#1f1b1b;
+
 $color-verde: #27576d;
-$color-marfil: #F6F1F1;
+
+$color-marfil: #f7f5ed ;
+
+
+$sombra-pred:5px 5px 5px rgba(0, 0, 0, 0.507);
 
 *{
     margin: 0;
@@ -15,3 +24,27 @@ $color-marfil: #F6F1F1;
     background-color:#F6F1F1;
     font-family: rajdhani, Arial, Helvetica, sans-serif;}
 
+@keyframes mover-news{
+
+        0%{
+        color: $color-blanco;
+        text-shadow: $sombra-pred;
+        }
+        25%{
+            color: $color-celeste;
+            text-shadow: $sombra-pred;
+        }
+        50%{
+            color: $color-marfil;
+            text-shadow: $sombra-pred;
+        }
+        75%{
+            color:$color-celeste;
+            text-shadow: $sombra-pred;
+        }
+        100%{
+        
+            color: $color-blanco;
+            text-shadow: $sombra-pred;
+        }
+    }

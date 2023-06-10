@@ -9,6 +9,28 @@ html {
   font-family: rajdhani, Arial, Helvetica, sans-serif;
 }
 
+@keyframes mover-news {
+  0% {
+    color: #ffffff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+  }
+  25% {
+    color: #19A7CE;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+  }
+  50% {
+    color: #f7f5ed;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+  }
+  75% {
+    color: #19A7CE;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+  }
+  100% {
+    color: #ffffff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -56,7 +78,7 @@ html {
 }
 
 .header__contenedor--index {
-  display: none;
+  color: rgba(250, 235, 215, 0);
 } /*H1 OCULTO*/
 .logo__img {
   display: flex;
@@ -156,8 +178,8 @@ html {
 }
 .sec_mis__titulo {
   display: flex;
-  background-color: #146C94;
   color: #ffffff;
+  background-color: #146C94;
   border: #19A7CE solid 5px;
   border-radius: 50px;
   width: 80px;
@@ -222,12 +244,15 @@ html {
   background-size: cover;
   text-align: center;
   padding: 50px 50px;
-  width: 99%;
+  width: 100%;
   height: 100%;
 }
 .suscribir__h3 {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 3rem;
+  animation-name: mover-news;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 .suscribir__h4 {
   color: rgb(0, 0, 0);
@@ -388,6 +413,23 @@ html {
     height: 340px;
   }
 }
+@media (min-width: 2200px) {
+  .sec_mis__texto {
+    font-size: 2rem;
+  }
+  .sec_mis2 {
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+  .sec_mis2__texto {
+    font-size: 2rem;
+  }
+  .video_index {
+    width: 800px;
+    height: 440px;
+    margin-left: 200px;
+  }
+}
 .main-contacto {
   background-color: #27576d;
 }
@@ -398,7 +440,7 @@ html {
 }
 
 .contenedor_formularioh1 {
-  color: #F6F1F1;
+  color: #f7f5ed;
   font-size: 2rem;
   display: flex;
   justify-content: center;
@@ -549,7 +591,7 @@ html {
 
 .boton_formulario {
   background-color: rgb(63, 62, 62);
-  color: #F6F1F1;
+  color: #f7f5ed;
   width: 30%;
   height: 30px;
   line-height: 10px;
@@ -587,7 +629,7 @@ html {
   }
   .boton_formulario {
     background-color: rgb(63, 62, 62);
-    color: #F6F1F1;
+    color: #f7f5ed;
     width: 30%;
     height: 30px;
     line-height: 10px;
@@ -621,6 +663,11 @@ html {
   margin: 0 auto;
   width: 150px;
   height: 100px;
+}
+.nosotros_section__logo:hover {
+  transform: scale(1.3) rotate(360deg);
+  transition-duration: 2.5s;
+  transition-timing-function: ease;
 }
 .nosotros_section__img {
   width: 100%;
@@ -767,6 +814,16 @@ html {
     border-radius: 75px;
   }
 }
+@media (min-width: 2200px) {
+  .nosotros_section__logoytexto {
+    font-size: 2rem;
+    text-align: justify;
+    justify-content: center;
+  }
+  .texto_equipo {
+    font-size: 2rem;
+  }
+}
 .tarjeta {
   display: flex;
   flex-direction: column;
@@ -778,7 +835,7 @@ html {
 }
 .tarjeta__btn {
   background-color: rgb(63, 62, 62);
-  color: #F6F1F1;
+  color: #f7f5ed;
   width: 100px;
   height: 30px;
   line-height: 10px;
@@ -826,7 +883,7 @@ html {
 }
 @media (min-width: 1024px) {
   .h2_productos {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
   .header__contenedor {
     font-size: 3rem;
@@ -844,12 +901,25 @@ html {
     background-color: #ffffff;
     align-items: center;
   }
+  .tarjeta:hover {
+    transform: scale(90%);
+  }
+  .tarjeta__btn {
+    width: 120px;
+    height: 50px;
+  }
 }
 .noticias {
   display: flex;
   text-align: center;
   flex-direction: column;
   margin: 0 auto;
+  background-image: linear-gradient(#19A7CE, #146C94, #f7f5ed);
+}
+.noticias h2 {
+  font-size: 3rem;
+  color: #f7f5ed;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
 }
 .noticias__contenedor {
   display: flex;
@@ -869,50 +939,65 @@ html {
   text-align: center;
   border: rgba(5, 59, 110, 0.6862745098) solid 2px;
   border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
 }
 .noticias__principal h3 {
-  background-color: rgba(38, 99, 190, 0.231372549);
   font-size: 1.5rem;
-  color: rgba(5, 59, 110, 0.6862745098);
+  color: #146C94;
+  margin-bottom: 5px;
+  margin-top: 15px;
 }
 .noticias__principal p {
   text-align: justify;
   font-size: 1rem;
   color: #000000;
+  padding: 10px;
 }
 .noticias__secundaria {
   display: flex;
+  background-color: #ffffff;
   flex-direction: column;
   width: 70%;
   text-align: center;
-  border: rgba(5, 59, 110, 0.6862745098) solid 2px;
+  border: rgba(5, 59, 110, 0.6862745098) solid 1px;
   border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
 }
 .noticias__secundaria h3 {
-  background-color: rgba(84, 120, 175, 0.231372549);
+  font-size: 1.2rem;
+  color: #146C94;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.noticias__secundaria p {
+  text-align: justify;
   font-size: 1rem;
-  color: rgba(5, 59, 110, 0.6862745098);
+  color: #000000;
+  padding: 10px;
+}
+
+.principal__img {
+  border-radius: 4px 10px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+}
+
+.secundaria__img {
+  border-radius: 4px 10px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
 }
 
 /*NOTICIAS.HTML RESPONSIVE 768PX*/
 @media (min-width: 768px) {
   .noticias__principal {
-    background-color: #ffffff;
-    display: flex;
     grid-column: 1/3;
-    width: 500px;
-    text-align: center;
-    border: rgba(5, 59, 110, 0.6862745098) solid 2px;
-    border-radius: 6px;
+    width: 600px;
     margin: 0 auto;
   }
   .noticias__secundaria {
-    display: flex;
     width: 300px;
-    height: 444px;
-    text-align: center;
-    border: rgba(5, 59, 110, 0.6862745098) solid 2px;
-    border-radius: 6px;
+    height: 100%;
     margin: 0 auto;
   }
   .noticias__contenedor {
@@ -939,21 +1024,22 @@ html {
     justify-content: space-around;
   }
   .noticias__principal {
-    background-color: #ffffff;
-    display: flex;
     width: 700px;
-    text-align: center;
-    border: rgba(5, 59, 110, 0.6862745098) solid 2px;
-    border-radius: 6px;
   }
   .noticias__secundaria {
-    display: flex;
-    width: 500px;
+    width: 450px;
     height: 500px;
-    text-align: justify;
-    border: rgba(5, 59, 110, 0.6862745098) solid 2px;
-    border-radius: 6px;
+  }
+}
+@media (min-width: 1440px) {
+  .noticias__secundaria {
+    width: 600px;
+    height: 450px;
+  }
+  .secundaria__img {
+    width: 400px;
     margin: 0 auto;
+    margin-top: 10px;
   }
 }
 footer {
