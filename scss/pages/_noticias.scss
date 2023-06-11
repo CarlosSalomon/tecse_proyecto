@@ -37,7 +37,7 @@ margin-top: 15px;}
 & p {
     text-align: justify;
     font-size: 1rem;
-    color: #000000;
+    color: $color-negro;
     padding: 10px;
 }}
 
@@ -58,7 +58,7 @@ margin-top: 15px;}
 & p {
         text-align: justify;
         font-size: 1rem;
-        color: #000000;
+        color: $color-negro;
         padding: 10px;}}}
 
 .principal__img{
@@ -109,13 +109,13 @@ margin-top: 15px;}
 
 &__secundaria{
     width: 450px;
-    height: 500px;}}}
+    height: 550px;}}}
 
     @media(min-width:1440px){
 
 .noticias__secundaria{
     width: 600px;
-    height: 450px;}
+    height: 470px;}
 
 .secundaria__img{
 width: 400px;

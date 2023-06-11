@@ -44,7 +44,7 @@
     color: $color-verde;
     justify-content:space-evenly;
     align-content: center;
-    filter: drop-shadow(1px 1px 1px black);
+    filter: drop-shadow(1px 1px 1px $color-negro);
 }
 
 .gerente{
