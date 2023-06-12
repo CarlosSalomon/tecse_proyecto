@@ -30,9 +30,24 @@
 
 5.productos.html
 
-## Css
+## css
 
 1.styles.css
+
+## sass
+1. main.scss
+2. base.scss
+### pages
+1. _contacto.scss
+2. _index.scss
+3. _nosotros.scss
+4. _noticias.scss
+5. _productos.scss
+
+### components
+
+1. _footer.scss
+2. _header.scss
 
 ## Diseño Responsive
 
