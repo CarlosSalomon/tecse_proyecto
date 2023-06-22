@@ -2,31 +2,31 @@
     flex-direction: column;
 
 &__banner--index {
-    background-image: url("../img/indexhtml.jpg");/*BANNER INDEX*/
+    background-image: url("/img/indexhtml.jpg");
     background-position: center;
     background-size: cover;
     object-fit: cover;}
 
 &__banner--noticias{
-    background-image: url("../img/20230502024451_[fpdl.in]_camara-seguridad-video-urbano_109643-54.jpg");/*BANNER NOTICIAS*/
+    background-image: url("/img/bannernoticias.jpg");
     background-position: center;
     background-size: cover;
     object-fit: cover;}
 
 &__banner--producto{
-    background-image: url("../img/matrix-2326147_960_720.jpg");/*BANNER PRODUCTO*/
+    background-image: url("/img/bannerproducto.jpg");
     background-position: center;
     background-size: cover;
     object-fit: cover;
     }
 &__banner--nosotros{
-    background-image: url("../img/cybersecurity-6250709_960_720.jpg");/*BANNER NOSOTROS*/
+    background-image: url("/img/bannernosotros.jpg");
     background-position: center;
     background-size: cover;
     object-fit: cover;
     }
 &__banner--contacto{
-    background-image: url("../img/Diplomado-en-Seguridad-Electronica..jpg");/*BANNER CONTACTO*/
+    background-image: url("/img/bannercontacto.jpg");
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -43,7 +43,7 @@
     justify-content: center;}}
 
     .header__contenedor--index{ 
-        color: rgba(250, 235, 215, 0);} /*H1 OCULTO*/
+        color: rgba(250, 235, 215, 0);} 
 
 .logo__img{
     display: flex;
@@ -51,7 +51,7 @@
 
 .menu{
     display: flex;
-    background-color: #146C94;
+    background-color: $color-cyan;
     justify-content: center;
 
     ul li{ 
@@ -64,12 +64,15 @@
 
     a{
         display: flex;
-        color: #ffffff;
+        color: $color-blanco;
         text-decoration:solid ;
         justify-content: center;
         margin-left: 5px;
             &:hover{
                 background-color: rgba(31, 78, 122, 0.589);
+                height: 20px;
+                color: black;
+                border-radius: 6px;
     }}}}
 
 
@@ -78,15 +81,15 @@
     display: flex; 
     justify-content: center;
     margin: 0 auto;
-    margin-bottom: 5px;}/*buscar*/
+    margin-bottom: 5px;}
 
-.label{display: none;}/*buscar oculto*/
+.label{display: none;}
 
 .buscar_producto{
     width: 70%;
     height: 30px;
     border: #146C94 solid 2px;
-    border-radius: 5px;}/*nombre en el interior del input*/
+    border-radius: 5px;}
 
 .boton_buscar{background-color: rgb(63, 62, 62);
     color: #F6F1F1;
@@ -95,8 +98,8 @@
     line-height: 10px;
     border-radius: 5px;
     border-style: solid;
-    border-color: #19A7CE;
-    cursor: pointer;}/*estilo del boton*/
+    border-color: $color-celeste;
+    cursor: pointer;}
 
 @media(min-width:768px){
 .menu{

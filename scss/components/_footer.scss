@@ -22,7 +22,7 @@ footer{
     color: #F6F1F1;
     margin-bottom: 25px;
     font-weight: 500;
-    border-bottom: 2px solid #19A7CE;
+    border-bottom: 2px solid $color-celeste;
     padding-bottom: 10px;
     display: flex;
     justify-content: center;}
@@ -35,7 +35,7 @@ footer{
     margin-bottom: 15px ;
     transition: all .3s ease;
 & :hover {
-    color: #ffffff;
+    color: $color-blanco;
     padding-left: 6px;}}}}
 
 .contenedor_footer{
@@ -51,11 +51,11 @@ footer{
     text-align: center;
     line-height: 30px;
     border-radius: 50%;
-    color: #ffffff;
+    color: $color-blanco;
     transition: all .5s ease;
 
     &:hover{
-        background-color: #19A7CE;}
+        background-color: $color-celeste;}
 }
 .descarga_link{
     display: flex;
@@ -98,7 +98,7 @@ width: 100%;}
         text-align: center;
         line-height: 27px;
         border-radius: 60%;
-        color: #ffffff;
+        color: $color-blanco;
         transition: all .5s ease;}}
 
 }

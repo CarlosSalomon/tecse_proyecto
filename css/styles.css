@@ -36,31 +36,31 @@ html {
   flex-direction: column;
 }
 .header__banner--index {
-  background-image: url("../img/indexhtml.jpg"); /*BANNER INDEX*/
+  background-image: url("/img/indexhtml.jpg");
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
 .header__banner--noticias {
-  background-image: url("../img/20230502024451_[fpdl.in]_camara-seguridad-video-urbano_109643-54.jpg"); /*BANNER NOTICIAS*/
+  background-image: url("/img/bannernoticias.jpg");
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
 .header__banner--producto {
-  background-image: url("../img/matrix-2326147_960_720.jpg"); /*BANNER PRODUCTO*/
+  background-image: url("/img/bannerproducto.jpg");
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
 .header__banner--nosotros {
-  background-image: url("../img/cybersecurity-6250709_960_720.jpg"); /*BANNER NOSOTROS*/
+  background-image: url("/img/bannernosotros.jpg");
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
 .header__banner--contacto {
-  background-image: url("../img/Diplomado-en-Seguridad-Electronica..jpg"); /*BANNER CONTACTO*/
+  background-image: url("/img/bannercontacto.jpg");
   background-position: center;
   background-size: cover;
   object-fit: cover;
@@ -79,7 +79,8 @@ html {
 
 .header__contenedor--index {
   color: rgba(250, 235, 215, 0);
-} /*H1 OCULTO*/
+}
+
 .logo__img {
   display: flex;
   height: 100px;
@@ -107,6 +108,9 @@ html {
 }
 .menu ul li a:hover {
   background-color: rgba(31, 78, 122, 0.589);
+  height: 20px;
+  color: black;
+  border-radius: 6px;
 }
 
 .form_buscar {
@@ -115,16 +119,19 @@ html {
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 5px;
-} /*buscar*/
+}
+
 .label {
   display: none;
-} /*buscar oculto*/
+}
+
 .buscar_producto {
   width: 70%;
   height: 30px;
   border: #146C94 solid 2px;
   border-radius: 5px;
-} /*nombre en el interior del input*/
+}
+
 .boton_buscar {
   background-color: rgb(63, 62, 62);
   color: #F6F1F1;
@@ -135,7 +142,8 @@ html {
   border-style: solid;
   border-color: #19A7CE;
   cursor: pointer;
-} /*estilo del boton*/
+}
+
 @media (min-width: 768px) {
   .menu {
     justify-content: center;
@@ -240,7 +248,7 @@ html {
 .suscribir {
   display: grid;
   justify-items: center;
-  background-color: #27576d; /*newsletter*/
+  background-color: #27576d;
   background-size: cover;
   text-align: center;
   padding: 50px 50px;
@@ -278,7 +286,7 @@ html {
   border-radius: 5px;
   border-style: solid;
   border-color: #19A7CE;
-  cursor: pointer; /*VERIFICAR COLOR*/
+  cursor: pointer;
   margin-top: 10px;
 }
 
@@ -602,7 +610,8 @@ html {
   margin-left: 30px;
   margin-bottom: 15px;
   cursor: pointer;
-} /*estilo del boton*/
+}
+
 .map-responsive {
   background-color: #27576d;
   overflow: hidden;
@@ -788,7 +797,6 @@ html {
     border-radius: 75px;
   }
 }
-/* NOSOTROS HTML-RESPONSIVE 1024PX*/
 @media (min-width: 1024px) {
   .gerente {
     display: grid;
@@ -989,7 +997,6 @@ html {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
 }
 
-/*NOTICIAS.HTML RESPONSIVE 768PX*/
 @media (min-width: 768px) {
   .noticias__principal {
     grid-column: 1/3;
@@ -1011,7 +1018,6 @@ html {
     margin-bottom: 20px;
   }
 }
-/*NOTICIAS.HTML RESPONSIVE 1024PX*/
 @media (min-width: 1024px) {
   .noticias {
     display: grid;
