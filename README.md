@@ -11,6 +11,8 @@
 
 -**Alumno:** Carlos Salomón
 
+## ENTREGA FINAL DE PROYECTO
+
 # tecse_proyecto
 
 ![](./img/logo%20png.png)
@@ -60,8 +62,3 @@ Mobile First 375px
 ## Breakpoints
 768 px,
 1024px
-
-
-
-
-
